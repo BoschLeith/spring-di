@@ -3,8 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="student" class="com.example.springdi.Student">
+    <bean id="bosch" class="com.example.springdi.Student">
         <property name="studentName" value="Bosch"/>
+        <property name="id" value="1"/>
+    </bean>
+
+    <bean id="brooke" class="com.example.springdi.Student">
+        <property name="studentName" value="Brooke"/>
+        <property name="id" value="2"/>
     </bean>
 
 </beans>
