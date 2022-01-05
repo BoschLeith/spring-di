@@ -3,6 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="mathCheat" class="com.example.springdi.MathCheat"></bean>
+
     <bean id="bosch" class="com.example.springdi.Student">
         <constructor-arg name="studentName" value="Bosch"/>
         <constructor-arg name="id" value="1"/>
@@ -16,9 +18,11 @@
     <bean id="student" class="com.example.springdi.Student">
         <constructor-arg name="studentName" value="Student"/>
         <constructor-arg name="id" value="3"/>
-        <property name="mathCheat">
-            <bean class="com.example.springdi.MathCheat"></bean>
-        </property>
+        <property name="mathCheat" ref="mathCheat"/>
+    </bean>
+
+    <bean id="anotherStudent" class="com.example.springdi.AnotherStudent">
+        <property name="cheat" ref="mathCheat"/>
     </bean>
 
 </beans>
