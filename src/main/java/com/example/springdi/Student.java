@@ -10,9 +10,18 @@ public class Student {
 		this.studentName = studentName;
 	}
 
-	public void displayInfo(){
+	public void displayInfo() {
 		System.out.println("Student name is: " + studentName);
 		System.out.println("Student ID is: " + id);
 	}
 
+	MathCheat mathCheat;
+
+	public void cheating() {
+		mathCheat.mathCheat();
+	}
+
+	public void setMathCheat(MathCheat mathCheat) {
+		this.mathCheat = mathCheat;
+	}
 }
