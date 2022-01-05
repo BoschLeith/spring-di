@@ -9,7 +9,7 @@ public class AnotherStudent {
 	}
 
 	public void startCheating() {
-		cheat.mathCheat();
+		cheat.cheat();
 	}
 
 }

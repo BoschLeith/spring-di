@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="mathCheat" class="com.example.springdi.MathCheat"></bean>
+    <bean id="mathCheat" class="com.example.springdi.MathCheat"/>
 
     <bean id="bosch" class="com.example.springdi.Student">
         <constructor-arg name="studentName" value="Bosch"/>

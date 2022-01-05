@@ -4,7 +4,7 @@ public class Student {
 
 	private int id;
 	private String studentName;
-	private MathCheat mathCheat;
+	private Cheat cheat;
 
 	public Student(int id, String studentName) {
 		this.id = id;
@@ -17,10 +17,10 @@ public class Student {
 	}
 
 	public void cheating() {
-		mathCheat.mathCheat();
+		cheat.cheat();
 	}
 
 	public void setMathCheat(MathCheat mathCheat) {
-		this.mathCheat = mathCheat;
+		this.cheat = mathCheat;
 	}
 }
