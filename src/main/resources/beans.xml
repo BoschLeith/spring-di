@@ -13,4 +13,12 @@
         <constructor-arg name="id" value="2"/>
     </bean>
 
+    <bean id="student" class="com.example.springdi.Student">
+        <constructor-arg name="studentName" value="Student"/>
+        <constructor-arg name="id" value="3"/>
+        <property name="mathCheat">
+            <bean class="com.example.springdi.MathCheat"></bean>
+        </property>
+    </bean>
+
 </beans>

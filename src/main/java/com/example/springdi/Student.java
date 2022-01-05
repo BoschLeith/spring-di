@@ -4,6 +4,7 @@ public class Student {
 
 	private int id;
 	private String studentName;
+	private MathCheat mathCheat;
 
 	public Student(int id, String studentName) {
 		this.id = id;
@@ -14,8 +15,6 @@ public class Student {
 		System.out.println("Student name is: " + studentName);
 		System.out.println("Student ID is: " + id);
 	}
-
-	MathCheat mathCheat;
 
 	public void cheating() {
 		mathCheat.mathCheat();
